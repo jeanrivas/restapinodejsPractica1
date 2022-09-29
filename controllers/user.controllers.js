@@ -1,4 +1,4 @@
-const apisGet = (req, res) => {
+const userGet = (req, res) => {
 	const body = req.body;
 
 	res.json({
@@ -7,33 +7,33 @@ const apisGet = (req, res) => {
 	});
 };
 
-const apisPost = (req, res) => {
+const userPost = (req, res) => {
 	res.json({
 		message: 'API POST',
 	});
 };
 
-const apisPut = (req, res) => {
+const userPut = (req, res) => {
 	res.json({
 		message: 'API PUT',
 	});
 };
-const apisPatch = (req, res) => {
+const userPatch = (req, res) => {
 	res.json({
 		message: 'API PATCH',
 	});
 };
 
-const apisDelete = (req, res) => {
+const userDelete = (req, res) => {
 	res.json({
 		message: 'API DELETE',
 	});
 };
 
 module.exports = {
-	apisGet,
-	apisPost,
-	apisPut,
-	apisPatch,
-	apisDelete,
+	userGet,
+	userPost,
+	userPut,
+	userPatch,
+	userDelete,
 };

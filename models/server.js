@@ -4,7 +4,7 @@ const cors = require('cors');
 class Server {
 	constructor() {
 		this.app = express();
-		this.pathApi = '/apis';
+		this.pathUser = '/api/users';
 		this.middlewares();
 
 		this.routes();
@@ -17,7 +17,7 @@ class Server {
 	}
 
 	routes() {
-		this.app.use(this.pathApi, require('../routes/api.routes'));
+		this.app.use(this.pathUser, require('../routes/user.routes'));
 	}
 
 	listen() {
